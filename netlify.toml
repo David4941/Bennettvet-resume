@@ -1,0 +1,9 @@
+# Netlify configuration — static site, no build step required.
+[build]
+  publish = "."
+
+# Send a sensible 404 back to the homepage (single-page site).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
